@@ -16,6 +16,7 @@ target 'iOSWSDL2Swift' do
 
     pod 'JetToTheFuture', '>= 0.4.0-beta.1'
     pod 'Toki', '>= 0.5'
+    pod 'Result'
   end
 end
 

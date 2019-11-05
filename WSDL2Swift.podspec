@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "WSDL2Swift"
-  s.version      = "0.9.0"
+  s.version      = "0.9.1"
   s.summary      = "Swift alternative to WSDL2ObjC making a SOAP request & parsing its response as defined in WSDL"
   s.description  = <<-DESC
   Swift alternative to WSDL2ObjC making a SOAP request & parsing its response as defined in WSDL.
@@ -18,5 +18,6 @@ Pod::Spec.new do |s|
   s.dependency "BrightFutures"
   s.dependency "ISO8601"
   s.dependency "Fuzi", "~> 2.0"
+  s.dependency "Result"
   s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' } # Fuzi requires this header search paths to each dependants (the dependants of this pod also affected  indirectly)
 end

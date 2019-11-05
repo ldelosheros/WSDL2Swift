@@ -33,11 +33,13 @@ PODS:
     - BrightFutures
     - Fuzi (~> 2.0)
     - ISO8601
+    - Result
 
 DEPENDENCIES:
   - AEXML (<= 4.4.0)
   - Commander (<= 0.8.0)
   - JetToTheFuture (>= 0.4.0-beta.1)
+  - Result
   - Stencil
   - Toki (>= 0.5)
   - WSDL2Swift (from `./`)
@@ -76,8 +78,8 @@ SPEC CHECKSUMS:
   Stencil: b5128a0a43ece9225db5cbd94d6569fe6fba609b
   Toki: df0859dedbdc0e614c163e1857efba2e4290e25b
   URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
-  WSDL2Swift: 97b768e8c30e8f760c089c2833904865871e7df1
+  WSDL2Swift: 3e0e1b2c9ac8dfc621dec72f2615961d072c6d48
 
-PODFILE CHECKSUM: 971dbfd0765abfd5f97dca7dcadfdf37c49d53a1
+PODFILE CHECKSUM: e7440b916adf26a03b126efa072eb800b35c1871
 
 COCOAPODS: 1.5.3
