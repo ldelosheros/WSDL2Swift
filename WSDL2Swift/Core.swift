@@ -120,9 +120,9 @@ struct Core {
         // * child of element <complexType>... use the enclosing element name as type name
         guard xsd.root.name == "schema" else { return nil }
         let complexTypes: [AEXMLElement] = (xsd.root["complexType"].all ?? [])
-            + ((xsd.root["element"].all ?? []).flatMap {$0["complexType"].all}.joined())
+            + ((xsd.root["element"].all ?? []).compactMap {$0["complexType"].all}.joined())
         let types = complexTypes
-            .flatMap {XSDType.deserialize($0, prefix: prefix)}
+            .compactMap {XSDType.deserialize($0, prefix: prefix)}
             .map {(prefix, $0)}
         return types
     }
@@ -152,10 +152,10 @@ struct WSDL {
         guard wsdl.root.name == "definitions" else { return nil }
         targetNamespace = wsdl.root.attributes["targetNamespace"]!
         types = (wsdl.root["types"])
-        messages = (wsdl.root["message"].all ?? []).flatMap(WSDLMessage.deserialize)
-        portType = (wsdl.root["portType"].all ?? []).flatMap(WSDLPortType.deserialize).first!
-        binding = (wsdl.root["binding"].all ?? []).flatMap(WSDLBinding.deserialize).first!
-        service = (wsdl.root["service"].all ?? []).flatMap(WSDLService.deserialize).first!
+        messages = (wsdl.root["message"].all ?? []).compactMap(WSDLMessage.deserialize)
+        portType = (wsdl.root["portType"].all ?? []).compactMap(WSDLPortType.deserialize).first!
+        binding = (wsdl.root["binding"].all ?? []).compactMap(WSDLBinding.deserialize).first!
+        service = (wsdl.root["service"].all ?? []).compactMap(WSDLService.deserialize).first!
     }
 
     func swift() -> String {
@@ -198,7 +198,7 @@ struct WSDLPortType {
 
     static func deserialize(_ node: AEXMLElement) -> WSDLPortType? {
         guard let name = node.attributes["name"],
-            let operations = node["operation"].all?.flatMap({WSDLOperation.deserialize($0)}) else {
+            let operations = node["operation"].all?.compactMap({WSDLOperation.deserialize($0)}) else {
             NSLog("%@", "cannot deserialize \(self) from node \(node.xmlCompact)")
             return nil
         }
@@ -360,7 +360,7 @@ struct XSDType {
             "base": bases ?? [:],
             "publicMemberwiseInit": publicMemberwiseInit,
             "xmlParams": (self.elements + (baseType?.elements ?? [])).map {["name": $0.name, "swiftName": $0.swiftName, "xmlns": $0.xmlns]},
-            "innerTypes": self.elements.flatMap { e -> String? in
+            "innerTypes": self.elements.compactMap { e -> String? in
                 if case let .inner(t) = e.type { return t.swift(env, prefix: prefix, publicMemberwiseInit: publicMemberwiseInit, typeQualifier: typeQualifier + [name]) } else { return nil }
             },
         ]

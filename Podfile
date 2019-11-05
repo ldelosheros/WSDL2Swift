@@ -2,9 +2,9 @@ use_frameworks!
 
 target 'WSDL2Swift' do
   platform :osx, '10.11'
-  pod 'AEXML'
+  pod 'AEXML', '<= 4.4.0'
   pod 'Stencil'
-  pod 'Commander'
+  pod 'Commander', '<= 0.8.0'
 end
 
 target 'iOSWSDL2Swift' do
