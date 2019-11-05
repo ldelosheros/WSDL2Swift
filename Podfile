@@ -15,8 +15,8 @@ target 'iOSWSDL2Swift' do
     inherit! :complete
 
     pod 'JetToTheFuture', '>= 0.4.0-beta.1'
-    pod 'Toki', '>= 0.5'
-    pod 'Result'
+    pod 'Toki', '<= 0.12.0'
+    pod 'Result', '<= 3.2.4'
   end
 end
 

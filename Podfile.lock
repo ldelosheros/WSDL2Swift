@@ -28,20 +28,20 @@ PODS:
     - OHHTTPStubs/NSURLSession (~> 6.1)
     - WSDL2Swift (>= 0.7)
   - URITemplate (2.0.3)
-  - WSDL2Swift (0.9.0):
+  - WSDL2Swift (0.9.1):
     - AEXML
-    - BrightFutures
-    - Fuzi (~> 2.0)
+    - BrightFutures (~> 6.0.1)
+    - Fuzi (~> 2.2.1)
     - ISO8601
-    - Result
+    - Result (~> 3.2.4)
 
 DEPENDENCIES:
   - AEXML (<= 4.4.0)
   - Commander (<= 0.8.0)
   - JetToTheFuture (>= 0.4.0-beta.1)
-  - Result
+  - Result (<= 3.2.4)
   - Stencil
-  - Toki (>= 0.5)
+  - Toki (<= 0.12.0)
   - WSDL2Swift (from `./`)
 
 SPEC REPOS:
@@ -78,8 +78,8 @@ SPEC CHECKSUMS:
   Stencil: b5128a0a43ece9225db5cbd94d6569fe6fba609b
   Toki: df0859dedbdc0e614c163e1857efba2e4290e25b
   URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
-  WSDL2Swift: 3e0e1b2c9ac8dfc621dec72f2615961d072c6d48
+  WSDL2Swift: ff6cd73aeee7f015ec1c7fd39dd7f95989d53858
 
-PODFILE CHECKSUM: e7440b916adf26a03b126efa072eb800b35c1871
+PODFILE CHECKSUM: 285afe5ad1486beeb7493ebb0e762465d69100ef
 
 COCOAPODS: 1.5.3
