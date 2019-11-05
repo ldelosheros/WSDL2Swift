@@ -295,7 +295,7 @@
 					};
 					EA1F09A61DE4376C00414030 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = FPZK4WRGW7;
+						DevelopmentTeam = ULX83BJK6N;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
@@ -708,7 +708,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ULX83BJK6N;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
@@ -724,7 +724,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ULX83BJK6N;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
