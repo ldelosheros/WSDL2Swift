@@ -8,7 +8,7 @@ target 'WSDL2Swift' do
 end
 
 target 'iOSWSDL2Swift' do
-  platform :ios, '9.0'
+  platform :ios, '11.0'
   pod 'WSDL2Swift', path: './'
 
   target 'iOSWSDL2SwiftTests' do

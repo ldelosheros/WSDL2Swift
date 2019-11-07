@@ -3,7 +3,7 @@ PODS:
   - BrightFutures (6.0.1):
     - Result (~> 3.2.4)
   - Commander (0.8.0)
-  - Fuzi (2.2.1)
+  - Fuzi (3.1.1)
   - ISO8601 (0.6.0)
   - JetToTheFuture (0.4.0):
     - BrightFutures (~> 6.0)
@@ -28,12 +28,12 @@ PODS:
     - OHHTTPStubs/NSURLSession (~> 6.1)
     - WSDL2Swift (>= 0.7)
   - URITemplate (2.0.3)
-  - WSDL2Swift (0.9.4):
+  - WSDL2Swift (0.9.5):
     - AEXML (~> 4.3.0)
     - BrightFutures (~> 6.0.1)
-    - Fuzi (~> 2.2.1)
+    - Fuzi
     - ISO8601
-    - Result (~> 3.2.4)
+    - Result
     - Stencil (~> 0.13.0)
 
 DEPENDENCIES:
@@ -69,7 +69,7 @@ SPEC CHECKSUMS:
   AEXML: bae92c01e0da64132fd72f748721cda07466032b
   BrightFutures: 9c03dab79e73ffe504b7bafc15c5bfdaeee54890
   Commander: 6eda7635b133e239faa85bf75dcab88d6fd63aaa
-  Fuzi: 3e6c73359d84a92376763abbaf8ced4d49c0f4ea
+  Fuzi: bcc5694488dd6e672e126cbf3c5471d7a79506d1
   ISO8601: d3ea3ba9b752820cf92c6b47a9ee327e9f0e13fc
   JetToTheFuture: 101355e7403a0001a0bab3303b05b1be58df7cbe
   Mockingjay: 11a621880d2887f1775bdcf824341eb68f218450
@@ -79,8 +79,8 @@ SPEC CHECKSUMS:
   Stencil: 0f46117fc081cc506d5c4b5b90cfdfe207945aa9
   Toki: df0859dedbdc0e614c163e1857efba2e4290e25b
   URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
-  WSDL2Swift: 8011fe4f33190b91d10366c9d30d3dee9a3b499b
+  WSDL2Swift: a096d67d6e75560fea2cb0eec494249413f7193f
 
-PODFILE CHECKSUM: b26cdff608d09c49c7063ab846f624702748e76f
+PODFILE CHECKSUM: 6f14bc6e4d0c87d92f9a6d89610d1297dd355463
 
 COCOAPODS: 1.8.4
