@@ -17,10 +17,10 @@ PODS:
   - OHHTTPStubs/Core (6.2.0)
   - OHHTTPStubs/NSURLSession (6.2.0):
     - OHHTTPStubs/Core
-  - PathKit (0.9.2)
+  - PathKit (1.0.0)
   - Result (3.2.4)
   - Stencil (0.13.1):
-    - PathKit (~> 0.9.0)
+    - PathKit (~> 1.0.0)
   - Toki (0.12.0):
     - AEXML
     - Fuzi
@@ -28,11 +28,12 @@ PODS:
     - OHHTTPStubs/NSURLSession (~> 6.1)
     - WSDL2Swift (>= 0.7)
   - URITemplate (2.0.3)
-  - WSDL2Swift (0.9.6):
+  - WSDL2Swift (0.9.7):
     - AEXML
     - BrightFutures
     - Fuzi
     - ISO8601
+    - PathKit (~> 1.0.0)
     - Result
     - Stencil (~> 0.13.0)
 
@@ -40,8 +41,9 @@ DEPENDENCIES:
   - AEXML
   - Commander (= 0.8.0)
   - JetToTheFuture
+  - PathKit (= 1.0.0)
   - Result
-  - Stencil
+  - Stencil (from `https://github.com/ldelosheros/Stencil`)
   - Toki
   - WSDL2Swift (from `./`)
 
@@ -57,13 +59,19 @@ SPEC REPOS:
     - OHHTTPStubs
     - PathKit
     - Result
-    - Stencil
     - Toki
     - URITemplate
 
 EXTERNAL SOURCES:
+  Stencil:
+    :git: https://github.com/ldelosheros/Stencil
   WSDL2Swift:
     :path: "./"
+
+CHECKOUT OPTIONS:
+  Stencil:
+    :commit: b95702e694ee503b31d438c3b602befc47e89d80
+    :git: https://github.com/ldelosheros/Stencil
 
 SPEC CHECKSUMS:
   AEXML: 0e8f1d874fa033ca6b3909452a8bc362faad46e6
@@ -74,13 +82,13 @@ SPEC CHECKSUMS:
   JetToTheFuture: 101355e7403a0001a0bab3303b05b1be58df7cbe
   Mockingjay: 11a621880d2887f1775bdcf824341eb68f218450
   OHHTTPStubs: 9cde8b5c0b8cc5c0f393b5e20c8efb6e05915c63
-  PathKit: 273f59a38e3218eb95abd9f6a61730a8bcfd2f06
+  PathKit: 364e0de7fb5adb142aecab4e112187e5548fc4b6
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
-  Stencil: b5128a0a43ece9225db5cbd94d6569fe6fba609b
+  Stencil: 9862cc0cec096621c070a7c9daba91063b0f1881
   Toki: df0859dedbdc0e614c163e1857efba2e4290e25b
   URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
-  WSDL2Swift: 8754105552248b941c54e466d3ef3598059c5dbd
+  WSDL2Swift: 08a3e4659a347ad782ce81fd5bf3ba187f01dcae
 
-PODFILE CHECKSUM: d184ebfa2d45357fed1d5f2b8a83cd34008ace62
+PODFILE CHECKSUM: 2e7320eee7c17bbdf149d43ed9dd8437cf48dba8
 
 COCOAPODS: 1.8.4
