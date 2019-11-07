@@ -19,5 +19,6 @@ Pod::Spec.new do |s|
   s.dependency "ISO8601"
   s.dependency "Fuzi", "~> 2.2.1"
   s.dependency "Result", "~> 3.2.4"
+  s.dependency "Stencil", "~> 0.13.0"
   s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' } # Fuzi requires this header search paths to each dependants (the dependants of this pod also affected  indirectly)
 end
