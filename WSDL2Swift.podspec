@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "WSDL2Swift"
-  s.version      = "0.9.3"
+  s.version      = "0.9.4"
   s.summary      = "Swift alternative to WSDL2ObjC making a SOAP request & parsing its response as defined in WSDL"
   s.description  = <<-DESC
   Swift alternative to WSDL2ObjC making a SOAP request & parsing its response as defined in WSDL.
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.11"
   s.source       = { :git => "https://github.com/banjun/WSDL2Swift.git", :tag => "#{s.version}" }
   s.source_files  = 'WSDL2Swift.swift'
-  s.dependency "AEXML", "~> 4.0.0"
+  s.dependency "AEXML", "~> 4.1.0"
   s.dependency "BrightFutures", "~> 6.0.1"
   s.dependency "ISO8601"
   s.dependency "Fuzi", "~> 2.2.1"

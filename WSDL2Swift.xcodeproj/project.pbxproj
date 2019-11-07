@@ -421,7 +421,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOSWSDL2Swift-iOSWSDL2SwiftTests/Pods-iOSWSDL2Swift-iOSWSDL2SwiftTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iOSWSDL2Swift-iOSWSDL2SwiftTests/Pods-iOSWSDL2Swift-iOSWSDL2SwiftTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AEXML-iOS/AEXML.framework",
 				"${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework",
 				"${BUILT_PRODUCTS_DIR}/Fuzi/Fuzi.framework",
@@ -450,7 +450,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSWSDL2Swift-iOSWSDL2SwiftTests/Pods-iOSWSDL2Swift-iOSWSDL2SwiftTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSWSDL2Swift-iOSWSDL2SwiftTests/Pods-iOSWSDL2Swift-iOSWSDL2SwiftTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F9C5B1F57D7EB7F49456204D /* [CP] Check Pods Manifest.lock */ = {
@@ -477,7 +477,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOSWSDL2Swift/Pods-iOSWSDL2Swift-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iOSWSDL2Swift/Pods-iOSWSDL2Swift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AEXML-iOS/AEXML.framework",
 				"${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework",
 				"${BUILT_PRODUCTS_DIR}/Fuzi/Fuzi.framework",
@@ -496,7 +496,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSWSDL2Swift/Pods-iOSWSDL2Swift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSWSDL2Swift/Pods-iOSWSDL2Swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

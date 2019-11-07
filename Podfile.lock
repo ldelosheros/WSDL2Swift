@@ -1,5 +1,5 @@
 PODS:
-  - AEXML (4.0.0)
+  - AEXML (4.1.0)
   - BrightFutures (6.0.1):
     - Result (~> 3.2.4)
   - Commander (0.8.0)
@@ -28,15 +28,15 @@ PODS:
     - OHHTTPStubs/NSURLSession (~> 6.1)
     - WSDL2Swift (>= 0.7)
   - URITemplate (2.0.3)
-  - WSDL2Swift (0.9.2):
-    - AEXML (~> 4.0.0)
+  - WSDL2Swift (0.9.3):
+    - AEXML (~> 4.1.0)
     - BrightFutures (~> 6.0.1)
     - Fuzi (~> 2.2.1)
     - ISO8601
     - Result (~> 3.2.4)
 
 DEPENDENCIES:
-  - AEXML (<= 4.0.0)
+  - AEXML (<= 4.1.0)
   - Commander (<= 0.8.0)
   - JetToTheFuture (>= 0.4.0-beta.1)
   - Result (<= 3.2.4)
@@ -45,7 +45,7 @@ DEPENDENCIES:
   - WSDL2Swift (from `./`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - AEXML
     - BrightFutures
     - Commander
@@ -65,7 +65,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  AEXML: 6fc6433aa35bdc15dd8eb8d54eb7aa4520a010eb
+  AEXML: 647fbb051280f3fb38a1a7caa62b0344055a851c
   BrightFutures: 9c03dab79e73ffe504b7bafc15c5bfdaeee54890
   Commander: 6eda7635b133e239faa85bf75dcab88d6fd63aaa
   Fuzi: 3e6c73359d84a92376763abbaf8ced4d49c0f4ea
@@ -78,8 +78,8 @@ SPEC CHECKSUMS:
   Stencil: b5128a0a43ece9225db5cbd94d6569fe6fba609b
   Toki: df0859dedbdc0e614c163e1857efba2e4290e25b
   URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
-  WSDL2Swift: ed0cd2e1968448d37a7a632474cf8ab7933a4205
+  WSDL2Swift: 48f809ad49f5991cc4c0109a4d9f89af1a5441d0
 
-PODFILE CHECKSUM: 2e39dc792881f2276f8ef80adf6ed5b11134ff92
+PODFILE CHECKSUM: dd142eda02d6fec573c2a3b0a86d47404bc3236f
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
