@@ -17,10 +17,10 @@ PODS:
   - OHHTTPStubs/Core (6.2.0)
   - OHHTTPStubs/NSURLSession (6.2.0):
     - OHHTTPStubs/Core
-  - PathKit (1.0.0)
+  - PathKit (0.9.0)
   - Result (3.2.4)
   - Stencil (0.13.1):
-    - PathKit (~> 1.0.0)
+    - PathKit (~> 0.9.0)
   - Toki (0.12.0):
     - AEXML
     - Fuzi
@@ -33,17 +33,17 @@ PODS:
     - BrightFutures
     - Fuzi
     - ISO8601
-    - PathKit (~> 1.0.0)
+    - PathKit (~> 0.9.0)
     - Result
-    - Stencil
+    - Stencil (~> 0.13.1)
 
 DEPENDENCIES:
   - AEXML
   - Commander (= 0.8.0)
   - JetToTheFuture
-  - PathKit (= 1.0.0)
+  - PathKit (= 0.9.0)
   - Result
-  - Stencil (from `https://github.com/ldelosheros/Stencil`)
+  - Stencil
   - Toki
   - WSDL2Swift (from `./`)
 
@@ -59,19 +59,13 @@ SPEC REPOS:
     - OHHTTPStubs
     - PathKit
     - Result
+    - Stencil
     - Toki
     - URITemplate
 
 EXTERNAL SOURCES:
-  Stencil:
-    :git: https://github.com/ldelosheros/Stencil
   WSDL2Swift:
     :path: "./"
-
-CHECKOUT OPTIONS:
-  Stencil:
-    :commit: b95702e694ee503b31d438c3b602befc47e89d80
-    :git: https://github.com/ldelosheros/Stencil
 
 SPEC CHECKSUMS:
   AEXML: 0e8f1d874fa033ca6b3909452a8bc362faad46e6
@@ -82,13 +76,13 @@ SPEC CHECKSUMS:
   JetToTheFuture: 101355e7403a0001a0bab3303b05b1be58df7cbe
   Mockingjay: 11a621880d2887f1775bdcf824341eb68f218450
   OHHTTPStubs: 9cde8b5c0b8cc5c0f393b5e20c8efb6e05915c63
-  PathKit: 364e0de7fb5adb142aecab4e112187e5548fc4b6
+  PathKit: bc177736eb737341ddee2c24413d81ef1abc9ba4
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
-  Stencil: 9862cc0cec096621c070a7c9daba91063b0f1881
+  Stencil: b5128a0a43ece9225db5cbd94d6569fe6fba609b
   Toki: df0859dedbdc0e614c163e1857efba2e4290e25b
   URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
-  WSDL2Swift: 29addae66671b5c91562aaf61dee28a765522842
+  WSDL2Swift: 5f3180c8223b9f575664605f8349c0edfa5b6fae
 
-PODFILE CHECKSUM: 2e7320eee7c17bbdf149d43ed9dd8437cf48dba8
+PODFILE CHECKSUM: 0f66677a07fe18c1c738ec22588a1c195eaf4b24
 
 COCOAPODS: 1.8.4

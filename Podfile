@@ -3,7 +3,7 @@ use_frameworks!
 target 'WSDL2Swift' do
   platform :osx, '10.11'
   pod 'AEXML'
-  pod 'Stencil', :git => 'https://github.com/ldelosheros/Stencil'
+  pod 'Stencil'
   pod 'Commander', '0.8.0'
   pod 'PathKit', '0.9.0'
 end
