@@ -35,7 +35,7 @@ PODS:
     - ISO8601
     - PathKit (~> 1.0.0)
     - Result
-    - Stencil (~> 0.13.0)
+    - Stencil
 
 DEPENDENCIES:
   - AEXML
@@ -87,7 +87,7 @@ SPEC CHECKSUMS:
   Stencil: 9862cc0cec096621c070a7c9daba91063b0f1881
   Toki: df0859dedbdc0e614c163e1857efba2e4290e25b
   URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
-  WSDL2Swift: 08a3e4659a347ad782ce81fd5bf3ba187f01dcae
+  WSDL2Swift: 29addae66671b5c91562aaf61dee28a765522842
 
 PODFILE CHECKSUM: 2e7320eee7c17bbdf149d43ed9dd8437cf48dba8
 

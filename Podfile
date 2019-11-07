@@ -5,7 +5,7 @@ target 'WSDL2Swift' do
   pod 'AEXML'
   pod 'Stencil', :git => 'https://github.com/ldelosheros/Stencil'
   pod 'Commander', '0.8.0'
-  pod 'PathKit', '1.0.0'
+  pod 'PathKit', '0.9.0'
 end
 
 target 'iOSWSDL2Swift' do
