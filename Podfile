@@ -2,9 +2,9 @@ use_frameworks!
 
 target 'WSDL2Swift' do
   platform :osx, '10.11'
-  pod 'AEXML', '<= 4.3.0'
-  pod 'Stencil', '0.13.0'
-  pod 'Commander', '<= 0.8.0'
+  pod 'AEXML'
+  pod 'Stencil'
+  pod 'Commander', '0.8.0'
 end
 
 target 'iOSWSDL2Swift' do
@@ -14,9 +14,9 @@ target 'iOSWSDL2Swift' do
   target 'iOSWSDL2SwiftTests' do
     inherit! :complete
 
-    pod 'JetToTheFuture', '>= 0.4.0-beta.1'
-    pod 'Toki', '<= 0.12.0'
-    pod 'Result', '<= 3.2.4'
+    pod 'JetToTheFuture'
+    pod 'Toki'
+    pod 'Result'
   end
 end
 
