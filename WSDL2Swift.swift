@@ -61,6 +61,7 @@ public protocol WSDLService {
     var interceptURLRequest: ((URLRequest) -> URLRequest)? { get set }
     var interceptResponse: ((Data?, URLResponse?, Error?) -> (Data?, URLResponse?, Error?))? { get set }
     init(endpoint: String, urlSession: URLSession)
+    init(endpoint: String, targetNamespace: String, path: String, urlSession: URLSession)
     
     // Implement this property when you need to specify charset
     var characterSetInContentType: CharacterSetInContentType { get }
