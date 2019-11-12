@@ -57,9 +57,10 @@ public protocol WSDLService {
     var endpoint: String { get set }
     var path: String { get }
     var targetNamespace: String { get }
+    var urlSession: URLSession { get }
     var interceptURLRequest: ((URLRequest) -> URLRequest)? { get set }
     var interceptResponse: ((Data?, URLResponse?, Error?) -> (Data?, URLResponse?, Error?))? { get set }
-    init(endpoint: String)
+    init(endpoint: String, urlSession: URLSession)
     
     // Implement this property when you need to specify charset
     var characterSetInContentType: CharacterSetInContentType { get }
@@ -89,7 +90,7 @@ public extension WSDLService {
         }
         //        NSLog("%@", "headers: \(request.allHTTPHeaderFields)")
         request = interceptURLRequest?(request) ?? request
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        let task = urlSession.dataTask(with: request) { data, response, error in
             let (data, _, error) = self.interceptResponse?(data, response, error) ?? (data, response, error)
             //            NSLog("%@", "\((response, error))")
 
