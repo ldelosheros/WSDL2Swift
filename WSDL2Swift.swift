@@ -58,10 +58,11 @@ public protocol WSDLService {
     var path: String { get }
     var targetNamespace: String { get }
     var urlSession: URLSession { get }
+    var soapAction: String?
     var interceptURLRequest: ((URLRequest) -> URLRequest)? { get set }
     var interceptResponse: ((Data?, URLResponse?, Error?) -> (Data?, URLResponse?, Error?))? { get set }
-    init(endpoint: String, urlSession: URLSession)
-    init(endpoint: String, targetNamespace: String, path: String, urlSession: URLSession)
+    init(endpoint: String, soapAction: String? = nil, urlSession: URLSession)
+    init(endpoint: String, targetNamespace: String, path: String, soapAction: String? = nil, urlSession: URLSession)
     
     // Implement this property when you need to specify charset
     var characterSetInContentType: CharacterSetInContentType { get }
@@ -85,6 +86,9 @@ public extension WSDLService {
         let charset = characterSetInContentType
         request.addValue("text/xml" + (charset.specifier == nil ? "" : ";\(charset.specifier!)") , forHTTPHeaderField: "Content-Type")
         request.addValue("WSDL2Swift", forHTTPHeaderField: "User-Agent")
+        if let soapAction = soapAction {
+            request.addValue(soapAction, forHTTPHeaderField: "SOAPAction")
+        }
         if let data = soapRequest.xml.data(using: .utf8) {
             //            request.addValue(String(data.length), forHTTPHeaderField: "Content-Length")
             request.httpBody = data
