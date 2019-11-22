@@ -1,12 +1,11 @@
 PODS:
   - AEXML (4.5.0)
-  - BrightFutures (6.0.1):
-    - Result (~> 3.2.4)
+  - BrightFutures (8.0.0)
   - Commander (0.8.0)
   - Fuzi (3.1.1)
   - ISO8601 (0.6.0)
-  - JetToTheFuture (0.4.0):
-    - BrightFutures (~> 6.0)
+  - JetToTheFuture (0.5.0):
+    - BrightFutures
   - Mockingjay (2.0.1):
     - Mockingjay/Core (= 2.0.1)
     - Mockingjay/XCTest (= 2.0.1)
@@ -18,7 +17,6 @@ PODS:
   - OHHTTPStubs/NSURLSession (6.2.0):
     - OHHTTPStubs/Core
   - PathKit (0.9.0)
-  - Result (3.2.4)
   - Stencil (0.13.1):
     - PathKit (~> 0.9.0)
   - Toki (0.12.0):
@@ -28,21 +26,19 @@ PODS:
     - OHHTTPStubs/NSURLSession (~> 6.1)
     - WSDL2Swift (>= 0.7)
   - URITemplate (2.0.3)
-  - WSDL2Swift (0.9.7):
+  - WSDL2Swift (0.9.8):
     - AEXML
-    - BrightFutures
     - Fuzi
     - ISO8601
+    - JetToTheFuture
     - PathKit (~> 0.9.0)
-    - Result
     - Stencil (~> 0.13.1)
 
 DEPENDENCIES:
   - AEXML
   - Commander (= 0.8.0)
-  - JetToTheFuture
+  - JetToTheFuture (from `/Users/lautaro/Documents/Works/iOS/libraries/JetToTheFuture`)
   - PathKit (= 0.9.0)
-  - Result
   - Stencil
   - Toki
   - WSDL2Swift (from `./`)
@@ -54,35 +50,34 @@ SPEC REPOS:
     - Commander
     - Fuzi
     - ISO8601
-    - JetToTheFuture
     - Mockingjay
     - OHHTTPStubs
     - PathKit
-    - Result
     - Stencil
     - Toki
     - URITemplate
 
 EXTERNAL SOURCES:
+  JetToTheFuture:
+    :path: "/Users/lautaro/Documents/Works/iOS/libraries/JetToTheFuture"
   WSDL2Swift:
     :path: "./"
 
 SPEC CHECKSUMS:
   AEXML: 0e8f1d874fa033ca6b3909452a8bc362faad46e6
-  BrightFutures: 9c03dab79e73ffe504b7bafc15c5bfdaeee54890
+  BrightFutures: f8427b46feabaf73c5e71ace7d86d65dfbb47696
   Commander: 6eda7635b133e239faa85bf75dcab88d6fd63aaa
   Fuzi: bcc5694488dd6e672e126cbf3c5471d7a79506d1
   ISO8601: d3ea3ba9b752820cf92c6b47a9ee327e9f0e13fc
-  JetToTheFuture: 101355e7403a0001a0bab3303b05b1be58df7cbe
+  JetToTheFuture: 26b9f3dedeb91d573a3b960d4d21309e53d70782
   Mockingjay: 11a621880d2887f1775bdcf824341eb68f218450
   OHHTTPStubs: 9cde8b5c0b8cc5c0f393b5e20c8efb6e05915c63
   PathKit: bc177736eb737341ddee2c24413d81ef1abc9ba4
-  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   Stencil: b5128a0a43ece9225db5cbd94d6569fe6fba609b
   Toki: df0859dedbdc0e614c163e1857efba2e4290e25b
   URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
-  WSDL2Swift: 76feb3fdadf39734663cabbf12f9120856432e97
+  WSDL2Swift: eeb332057068251fbddf3fa2bd928c11a2876664
 
-PODFILE CHECKSUM: 0f66677a07fe18c1c738ec22588a1c195eaf4b24
+PODFILE CHECKSUM: 4ab7b11e167e287cdc762e1686da1d625d117bfc
 
 COCOAPODS: 1.8.4
